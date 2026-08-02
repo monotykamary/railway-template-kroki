@@ -1,5 +1,7 @@
 # Kroki on Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/kroki-secure?referralCode=ZqgrJ0)
+
 Deploy Kroki 0.31.2 behind generated HTTP Basic authentication for on-demand diagram rendering.
 
 The Deploy on Railway button is added after the published route is verified.
