@@ -1,0 +1,36 @@
+{
+	auto_https off
+	admin off
+}
+
+:8080 {
+	log {
+		output stdout
+		format json
+	}
+
+	handle /healthz {
+		rewrite * /health
+		reverse_proxy {$KROKI_URL} {
+			transport http {
+				dial_timeout 10s
+				response_header_timeout 30s
+			}
+		}
+	}
+
+	handle {
+		request_body {
+			max_size 2MB
+		}
+		basic_auth {
+			{$BASIC_AUTH_USER} {$BASIC_AUTH_HASH}
+		}
+		reverse_proxy {$KROKI_URL} {
+			transport http {
+				dial_timeout 10s
+				response_header_timeout 120s
+			}
+		}
+	}
+}
