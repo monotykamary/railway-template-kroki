@@ -2,13 +2,13 @@
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/kroki-secure?referralCode=ZqgrJ0)
 
-Deploy Kroki 0.31.2 behind generated HTTP Basic authentication for on-demand diagram rendering.
+Deploy Kroki 0.32.0 behind generated HTTP Basic authentication for on-demand diagram rendering.
 
 The Deploy on Railway button is added after the published route is verified.
 
 ## What this deploys
 
-- Private Kroki gateway `0.31.2`, pinned to its official Linux/AMD64 image digest
+- Private Kroki gateway `0.32.0`, pinned to its official Linux/AMD64 image digest
 - Public Caddy `2.10.2-alpine` proxy, pinned by digest
 - Generated HTTP Basic credentials
 - Upstream-backed `/healthz` readiness and a 2 MB source request limit
@@ -47,8 +47,8 @@ BASE_URL=https://your-domain.example BASIC_AUTH_USER=kroki BASIC_AUTH_PASSWORD=.
 
 ## Upstream
 
-- Source: https://github.com/yuzutech/kroki/tree/v0.31.2
-- Release: https://github.com/yuzutech/kroki/releases/tag/v0.31.2
+- Source: https://github.com/yuzutech/kroki/tree/v0.32.0
+- Release: https://github.com/yuzutech/kroki/releases/tag/v0.32.0
 - Documentation: https://docs.kroki.io/kroki/
 - License: MIT
 

@@ -6,7 +6,7 @@ set -eu
 base=${BASE_URL%/}
 health=$(curl -fsS "$base/healthz")
 printf '%s' "$health" | grep -q '"status":"pass"'
-printf '%s' "$health" | grep -q '"number":"0.31.2"'
+printf '%s' "$health" | grep -q '"number":"0.32.0"'
 unauth=$(curl -sS -o /dev/null -w '%{http_code}' -H 'Content-Type: application/json' --data '{"diagram_source":"digraph G {a -> b}","diagram_type":"graphviz","output_format":"svg"}' "$base/")
 [ "$unauth" = "401" ]
 svg=$(curl -fsS --user "$BASIC_AUTH_USER:$BASIC_AUTH_PASSWORD" -H 'Content-Type: application/json' --data '{"diagram_source":"digraph G {a -> b}","diagram_type":"graphviz","output_format":"svg"}' "$base/")

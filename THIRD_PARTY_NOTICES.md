@@ -2,12 +2,12 @@
 
 ## Kroki
 
-- Version: 0.31.2
-- Source: https://github.com/yuzutech/kroki/tree/v0.31.2
+- Version: 0.32.0
+- Source: https://github.com/yuzutech/kroki/tree/v0.32.0
 - Copyright: Kroki contributors
 - License: MIT
 
-`assets/kroki-icon.png` is a square crop and resize of the first letter from `server/src/main/resources/web/root/assets/logo.svg` at tag `v0.31.2`, redistributed under the upstream MIT license.
+`assets/kroki-icon.png` is a square crop and resize of the first letter from `server/src/main/resources/web/root/assets/logo.svg` at tag `v0.32.0`, redistributed under the upstream MIT license.
 
 ## Caddy
 
