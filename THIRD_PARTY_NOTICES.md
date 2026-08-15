@@ -2,8 +2,8 @@
 
 ## Kroki
 
-- Version: 0.32.0
-- Source: https://github.com/yuzutech/kroki/tree/v0.32.0
+- Version: 0.32.1
+- Source: https://github.com/yuzutech/kroki/tree/v0.32.1
 - Copyright: Kroki contributors
 - License: MIT
 
