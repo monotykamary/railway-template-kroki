@@ -2,13 +2,13 @@
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/kroki-secure?referralCode=ZqgrJ0)
 
-Deploy Kroki 0.32.1 behind generated HTTP Basic authentication for on-demand diagram rendering.
+Deploy Kroki 0.33.0 behind generated HTTP Basic authentication for on-demand diagram rendering.
 
 The Deploy on Railway button is added after the published route is verified.
 
 ## What this deploys
 
-- Private Kroki gateway `0.32.1`, pinned to its official multi-architecture image digest
+- Private Kroki gateway `0.33.0`, pinned to its official multi-architecture image digest
 - Public Caddy `2.10.2-alpine` proxy, pinned to its official multi-architecture image digest
 - Generated HTTP Basic credentials
 - Upstream-backed `/healthz` readiness and a 2 MB source request limit
@@ -32,7 +32,7 @@ The public proxy limits source request bodies to 2 MB. Rendered diagrams are ret
 
 ## Security
 
-Rendering is compute-intensive and parser bugs may be reachable through untrusted diagram source. Authentication is enabled to reduce anonymous abuse; rotate credentials if disclosed and keep the pinned release current. Kroki 0.32.1 closes a secure-mode Vega SSRF and local-file-read bypass, and the official image keeps secure mode enabled. Do not remove authentication from an unrestricted public endpoint casually.
+Rendering is compute-intensive and parser bugs may be reachable through untrusted diagram source. Authentication is enabled to reduce anonymous abuse; rotate credentials if disclosed and keep the pinned release current. Kroki 0.33.0 closes a secure-mode Vega SSRF and local-file-read bypass, and the official image keeps secure mode enabled. Do not remove authentication from an unrestricted public endpoint casually.
 
 ## Updating
 
@@ -47,8 +47,8 @@ BASE_URL=https://your-domain.example BASIC_AUTH_USER=kroki BASIC_AUTH_PASSWORD=.
 
 ## Upstream
 
-- Source: https://github.com/yuzutech/kroki/tree/v0.32.1
-- Release: https://github.com/yuzutech/kroki/releases/tag/v0.32.1
+- Source: https://github.com/yuzutech/kroki/tree/v0.33.0
+- Release: https://github.com/yuzutech/kroki/releases/tag/v0.33.0
 - Documentation: https://docs.kroki.io/kroki/
 - License: MIT
 

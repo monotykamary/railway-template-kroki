@@ -1,3 +1,3 @@
-FROM docker.io/yuzutech/kroki:0.32.1@sha256:6980bfb218b48b74ea14b888d9c7e8c032d1cb6325f3292277abdf62483abd9d
+FROM docker.io/yuzutech/kroki:0.33.0@sha256:a4341ac44cd2590124da7142d13fdf5d83eadc2b94c023d018a2227695a30da1
 
 EXPOSE 8000
