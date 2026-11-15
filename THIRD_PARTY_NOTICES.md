@@ -2,8 +2,8 @@
 
 ## Kroki
 
-- Version: 0.33.0
-- Source: https://github.com/yuzutech/kroki/tree/v0.33.0
+- Version: 0.36.0
+- Source: https://github.com/yuzutech/kroki/tree/v0.36.0
 - Copyright: Kroki contributors
 - License: MIT
 
@@ -11,6 +11,6 @@
 
 ## Caddy
 
-- Version: 2.10.2
+- Version: 2.11.9
 - Source: https://github.com/caddyserver/caddy
 - License: Apache License 2.0
