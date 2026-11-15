@@ -9,6 +9,8 @@
 
 `assets/kroki-icon.png` is a square crop and resize of the first letter from `server/src/main/resources/web/root/assets/logo.svg` at tag `v0.32.0`, redistributed under the upstream MIT license.
 
+`assets/kroki-icon-contrast-20261115.png` preserves the complete first K subpath from the official v0.36.0 logo, at upstream commit `2e67edde965c155ecfdad446efb5fe7db8e3ed66`. The original dark fill is placed on a rounded light contrast tile for Railway dark-theme visibility. See `assets/kroki-icon-contrast-20261115.md` and the bundled upstream `assets/kroki-icon-source-LICENSE.txt`. This asset-only change does not alter runtime build inputs.
+
 ## Caddy
 
 - Version: 2.11.9
