@@ -4,12 +4,10 @@
 
 Deploy Kroki 0.36.0 behind generated HTTP Basic authentication for on-demand diagram rendering.
 
-The Deploy on Railway button is added after the published route is verified.
-
 ## What this deploys
 
 - Private Kroki gateway `0.36.0`, pinned to its official multi-architecture image digest
-- Public Caddy `2.10.2-alpine` proxy, pinned to its official multi-architecture image digest
+- Public Caddy `2.11.9-alpine` proxy, pinned to its official multi-architecture image digest
 - Generated HTTP Basic credentials
 - Upstream-backed `/healthz` readiness and a 2 MB source request limit
 
